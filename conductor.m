@@ -1,0 +1,1 @@
+accelData = parsePowerSenseData('anilconducting.csv');
