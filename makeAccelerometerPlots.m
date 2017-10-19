@@ -14,7 +14,7 @@ function makeAccelerometerPlots(accelData, titles, makeFrequencyPlot)
         xlabel(plotXlabel);
         ylabel(plotYlabel);
         if ~isempty(xLimits)
-            xlim(xLimits);
+            xlim([0 20]);
         end
         title(plotTitles{1});
         
@@ -24,7 +24,7 @@ function makeAccelerometerPlots(accelData, titles, makeFrequencyPlot)
         ylabel(plotYlabel);
         title(plotTitles{2});
         if ~isempty(xLimits)
-            xlim(xLimits);
+            xlim([0 20]);
         end
         
         p3 = subplot(133);
@@ -33,7 +33,7 @@ function makeAccelerometerPlots(accelData, titles, makeFrequencyPlot)
         ylabel(plotYlabel);
         title(plotTitles{3})
         if ~isempty(xLimits)
-            xlim(xLimits);
+            xlim([0 20]);
         end
         linkaxes([p1, p2, p3]);
     end
